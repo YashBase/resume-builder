@@ -1,0 +1,227 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-form, .resume-preview {
+  width: 45%;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #007BFF;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+form {
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.resume-preview h3 {
+  color: #333;
+}
+
+
+/* ResumeForm */
+/* General Styling for the Form */
+.resume-form {
+  background-color: #f4f7f6; /* Light grey background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.resume-form h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #007BFF; /* Blue color for headings */
+  margin-bottom: 20px;
+}
+
+/* Form Label Styling */
+.resume-form .form-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* Darker grey for text */
+}
+
+/* Input Fields Styling */
+.resume-form .form-control {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border 0.3s ease;
+}
+
+.resume-form .form-control:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styling */
+.resume-form .btn-primary {
+  background-color: #007BFF; /* Blue background for button */
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.resume-form .btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  cursor: pointer;
+}
+
+.resume-form .btn-primary:focus {
+  outline: none;
+}
+
+/* Input Placeholder Styling */
+.resume-form .form-control::placeholder {
+  color: #888; /* Placeholder text in lighter grey */
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .resume-form {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .resume-form h2 {
+    font-size: 20px;
+  }
+
+  .resume-form .form-control,
+  .resume-form .btn-primary {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/*ResumePreviewer */
+
+/* General Styling for Resume Preview */
+.resume-preview {
+  background-color: #fff; /* White background for a clean look */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Heading Styling */
+.resume-preview h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #007BFF; /* Blue color for headings */
+  margin-bottom: 20px;
+}
+
+/* Name Styling */
+.resume-preview h3 {
+  font-size: 28px;
+  color: #333; /* Dark color for the name */
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+.resume-preview p {
+  font-size: 16px;
+  color: #555; /* Lighter grey for text */
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+/* Strong Label Styling for Sections */
+.resume-preview p strong {
+  color: #007BFF; /* Blue for labels */
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .resume-preview {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .resume-preview h2 {
+    font-size: 22px;
+  }
+
+  .resume-preview h3 {
+    font-size: 24px;
+  }
+
+  .resume-preview p {
+    font-size: 14px;
+  }
+}
+
+/* Theme */
+
+/* Default Light Theme */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.resume-form, .resume-preview {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.resume-form.dark, .resume-preview.dark {
+  background-color: #1d1d1d;
+  color: #e0e0e0;
+  border: 1px solid #333;
+}
+
+button.dark {
+  background-color: #444;
+  color: #ccc;
+}
+
+/* Add other global styles for dark and light modes as needed */
